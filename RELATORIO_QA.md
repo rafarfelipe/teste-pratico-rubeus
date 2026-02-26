@@ -6,17 +6,14 @@
 
 ---
 
-# 📊 SUMÁRIO EXECUTIVO
+# 📈 RESUMO DE SEVERIDADE
 
-- **Status Geral:** ❌ REPROVADO PARA PRODUÇÃO
-- **Total de Itens Levantados:** 13
-- **Severidade Alta:** 8
-- **Severidade Média:** 3
-- **Severidade Baixa:** 2
-- **Bloqueadores de Conversão:** Sim (Formulários com erro de "Base Legal")
+| Severidade | Quantidade |
+| ---------- | ---------- |
+| 🔴 Alta    | 8          |
+| 🟠 Média   | 3          |
+| 🟢 Baixa   | 2          |
 
-**Conclusão Técnica:**  
-O sistema apresenta falhas críticas que impedem o fluxo principal de conversão (inscrição e geração de lead). Recomenda-se correção imediata antes de publicação em produção.
 
 ---
 
@@ -304,16 +301,6 @@ https://jam.dev/c/90668d92-cde1-4ce8-82b1-29f333e87d42
 
 ---
 
-# 📈 RESUMO DE SEVERIDADE
-
-| Severidade | Quantidade |
-| ---------- | ---------- |
-| 🔴 Alta    | 8          |
-| 🟠 Média   | 3          |
-| 🟢 Baixa   | 2          |
-
----
-
 # 🏁 CONCLUSÃO FINAL
 
 O sistema apresenta falhas críticas em fluxos de conversão e inconsistências de conteúdo.
@@ -323,7 +310,12 @@ Recomenda-se:
 - Correção imediata dos bugs de Alta Severidade
 - Nova rodada de testes após ajustes
 - Validação específica de formulários (LGPD + obrigatoriedade)
+- loqueadores de Conversão:** Sim (Formulários com erro de "Base Legal")
 
+ 
+ **Status Geral:** ❌ REPROVADO PARA PRODUÇÃO
+  
 ---
 
 **Relatório elaborado por Rafael Felipe – QA**
+
