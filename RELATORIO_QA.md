@@ -17,286 +17,391 @@
 
 ---
 
-# 🧪 PARTE 01 – Página de Certificação
-
-URL: https://qualidade.apprbs.com.br/certificacao
+# 🌐 PARTE 01: Página de Certificação  
+🔗 URL: https://qualidade.apprbs.com.br/certificacao
 
 ---
 
-## 🐞 BUG-01 – Texto “Lorem Ipsum” exibido na página
+## 🐞 Item 01 – Texto de exemplo (“Lorem ipsum”) exibido em grande parte da página
 
-- Tipo: Correção
-- Classificação: Usabilidade / Conteúdo
-- Severidade: 🔴 Alta
-- Prioridade: 🔴 Alta
-- Reprodutibilidade: 100%
+**Tipo:** Correção  
+**Classificação:** Usabilidade / Conteúdo  
+**Severidade:** Alta | **Prioridade:** Alta  
+**Reprodutibilidade:** 100%  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Atual
+### Pré-condições
+- Usuário com acesso ao site.
 
-Exibição de textos fictícios na página.
+### Passos para reproduzir
+1. Acessar a URL indicada.
+2. Percorrer as seções da página e ler títulos e parágrafos.
 
-### Resultado Esperado
+### Resultado atual
+A página exibe textos de exemplo como “Lorem ipsum…”, inclusive em títulos e conteúdos descritivos, sem informação real ao usuário.
 
-Conteúdo real, revisado e coerente.
+### Resultado esperado
+A página deve exibir conteúdo final em português, consistente e informativo, alinhado ao propósito da certificação.
+
+### Impacto
+Dificulta o entendimento do serviço, reduz a credibilidade/percepção de qualidade e pode afetar a conversão.
 
 ### Evidência
-
 https://jam.dev/c/87dba742-04de-4b06-ad77-9944846daa75
 
 ---
 
-## 🐞 BUG-02 – Botão “Saiba mais” não executa ação
+## 🐞 Item 02 – Botão “Saiba mais” não executa ação ao clique
 
-- Severidade: 🔴 Alta
-- Prioridade: 🔴 Alta
-- Reprodutibilidade: 100%
+**Tipo:** Correção  
+**Classificação:** Utilidade  
+**Severidade:** Alta | **Prioridade:** Alta  
+**Reprodutibilidade:** 100%  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Atual
+### Pré-condições
+- Usuário acessando a página de certificação.
 
-Botão não executa ação.
+### Passos para reproduzir
+1. Acessar: https://qualidade.apprbs.com.br/certificacao
+2. No topo da página (seção hero), clicar no botão “Saiba mais”.
 
-### Resultado Esperado
+### Resultado atual
+O botão não executa qualquer ação (não navega, não realiza rolagem e não exibe feedback).
 
-Redirecionamento ou rolagem adequada.
+### Resultado esperado
+Ao clicar, o sistema deve redirecionar para a página/rota de detalhes ou executar a ação prevista no fluxo.
+
+### Impacto
+Bloqueia o fluxo de informação do usuário, aumentando a taxa de rejeição.
 
 ### Evidência
-
 https://jam.dev/c/0b90c434-9a13-4f88-873d-13fca64a556c
 
 ---
 
-## 🐞 BUG-03 – Imagem com dimensionamento inadequado
+## 🐞 Item 03 – Imagem com dimensionamento inadequado no layout
 
-- Tipo: Melhoria
-- Severidade: 🟠 Média
-- Prioridade: 🟠 Média
+**Tipo:** Melhoria  
+**Classificação:** Desejabilidade  
+**Severidade:** Média | **Prioridade:** Média  
+**Reprodutibilidade:** 100%  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Atual
+### Passos para reproduzir
+1. Acessar: https://qualidade.apprbs.com.br/certificacao
+2. Rolar até a seção com imagem ao lado do texto.
 
-Imagem pequena e desalinhada.
+### Resultado atual
+Imagem pequena e desalinhada visualmente em relação ao conteúdo.
 
-### Resultado Esperado
+### Resultado esperado
+Imagem com dimensionamento adequado, proporção correta e alinhamento consistente com o layout (incluindo comportamento responsivo).
 
-Dimensionamento e alinhamento adequados.
+### Impacto
+Prejudica a apresentação visual e pode afetar a experiência do usuário.
 
 ### Evidência
-
 https://jam.dev/c/e4f15299-3ea5-4b3f-a366-d219fbe93924
 
 ---
 
-## 🐞 BUG-04 – Validação “Base Legal” bloqueando formulário
+## 🐞 Item 04 – Formulário bloqueado por validação de “base legal” sem campo visível
 
-- Severidade: 🔴 Alta
-- Prioridade: 🔴 Alta
-- Reprodutibilidade: 100%
+**Tipo:** Correção  
+**Classificação:** Utilidade  
+**Severidade:** Alta | **Prioridade:** Alta  
+**Reprodutibilidade:** 100%  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Atual
+### Pré-condições
+- Usuário na página de certificação com o formulário visível.
 
-Erro exigindo base legal sem campo visível.
+### Passos para reproduzir
+1. Acessar: https://qualidade.apprbs.com.br/certificacao
+2. No formulário (1/2), preencher Nome, Telefone e E-mail
+3. Clicar em “AVANÇAR”.
 
-### Resultado Esperado
+### Resultado atual
+Exibe erro “É necessário informar a base legal”, mas não há campo (checkbox/select) para preencher.
 
-Campo visível ou remoção da obrigatoriedade.
+### Resultado esperado
+Se “base legal” for obrigatória, deve existir campo visível e selecionável (ex.: checkbox ou select) com orientação clara antes da validação. Caso não seja obrigatória, o avanço não deve ser bloqueado.
 
 ### Impacto
-
-🚨 BLOQUEIA 100% das inscrições.
+Impede o avanço do usuário e pode bloquear inscrições.
 
 ### Evidência
-
 https://jam.dev/c/e426496d-ea5e-4d5e-871b-f8af7c402f77
 
 ---
 
-## 🐞 BUG-05 – Erros na seção “Outros Cursos”
+## 🐞 Item 05 – Seção “Outros Cursos” com erro textual e CTAs sem ação
 
-- Severidade: 🟠 Média
-- Prioridade: 🟠 Média
+**Tipo:** Correção  
+**Classificação:** Usabilidade  
+**Severidade:** Média | **Prioridade:** Média  
+**Reprodutibilidade:** 100%  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Atual
+### Pré-condições
+- Usuário na página de certificação.
 
-Textos inconsistentes e CTAs sem ação.
+### Passos para reproduzir
+1. Acessar: https://qualidade.apprbs.com.br/certificacao
+2. Rolar até a seção “Outros Cursos”
+3. Verificar os textos dos CTAs
+4. Clicar nos cards e botões
 
-### Resultado Esperado
+### Resultado atual
+Textos incorretos/inconsistentes e clique não executa navegação ou abertura de detalhes.
 
-Textos revisados e redirecionamento correto.
+### Resultado esperado
+Textos revisados e padronizados; cards e CTAs devem redirecionar para as páginas correspondentes.
+
+### Impacto
+Prejudica a navegação e pode confundir o usuário.
 
 ### Evidência
-
 https://jam.dev/c/52bcb0d9-d9b1-4176-8e54-4262628ba1a4
 
 ---
 
-## 🐞 BUG-06 – Botão inferior redireciona para site externo
+## 🐞 Item 06 – Botão “Quero me certificar” (barra azul inferior) redireciona para site externo
 
-- Severidade: 🔴 Alta
-- Prioridade: 🔴 Alta
+**Tipo:** Correção  
+**Classificação:** Utilidade  
+**Severidade:** Alta | **Prioridade:** Alta  
+**Reprodutibilidade:** 100%  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Atual
+### Pré-condições
+- Usuário acessando a página de certificação.
 
-Redirecionamento para Google.
+### Passos para reproduzir
+1. Acessar: https://qualidade.apprbs.com.br/certificacao
+2. Rolar até o final da página
+3. Clicar no botão “Quero me certificar”
 
-### Resultado Esperado
+### Resultado atual
+Redirecionamento para site externo https://www.google.com/ .
 
-Redirecionamento correto para fluxo de certificação.
+### Resultado esperado
+Deve redirecionar para o mesmo destino correto do botão equivalente localizado na barra superior (fluxo de certificação), sem redirecionamento externo indevido.
+
+### Impacto
+Interrompe o fluxo de navegação e pode gerar desconfiança ou abandono, afetando conversão.
 
 ### Evidência
-
 https://jam.dev/c/5a6bafa7-e938-4005-a64c-d2fe00dab343
 
 ---
 
-## 🐞 BUG-07 – Ausência de validação de Nome e Telefone
+## 🐞 Item 07 – Ausência de validação para campos obrigatórios ("Nome" e "Telefone")
 
-- Severidade: 🔴 Alta
-- Prioridade: 🔴 Alta
+**Tipo:** Correção  
+**Classificação:** Funcionalidade / Segurança de Dados  
+**Severidade:** Alta | **Prioridade:** Alta  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Atual
+### Pré-condições
+- Usuário acessa a página de inscrição em ambiente web compatível.
+- Formulário de inscrição disponível com campos "Nome", "Telefone" e "E-mail".
+- Botão "AVANÇAR" visível e habilitado.
 
-Sistema permite envio com campos obrigatórios vazios.
+### Passos para reproduzir
+1. Acessar a página de inscrição.
+2. Deixar os campos "Nome" e "Telefone" vazios.
+3. Preencher um e-mail válido.
+4. Clicar em "AVANÇAR".
 
-### Resultado Esperado
+### Resultado atual
+O sistema tenta avançar para a próxima etapa sem validar os campos obrigatórios "Nome" e "Telefone", não exibindo mensagens de erro específicas.
 
-Bloqueio com mensagem de erro.
-
-### Evidência
-
-https://jam.dev/c/de4f2904-64ea-4774-803e-ddc4975d7ac9
-
----
-
-## 🐞 BUG-08 – Placeholder fixo e ausência de máscara no telefone
-
-- Tipo: Melhoria
-- Classificação: Usabilidade / UX
-- Severidade: 🟢 Baixa
-- Prioridade: 🟢 Baixa
-- Reprodutibilidade: 100%
-
-### Resultado Atual
-
-- Placeholder estático
-- Sem máscara dinâmica
-- Botão permite avanço com telefone inválido
-
-### Resultado Esperado
-
-- Máscara dinâmica (XX) XXXXX-XXXX
-- Validação de formato antes do envio
+### Resultado esperado
+O sistema deve impedir o avanço e exibir mensagens de erro abaixo dos campos obrigatórios não preenchidos ("Nome" e "Telefone").
 
 ### Impacto
-
-Permite envio de dados inconsistentes.
+Permite o envio de cadastros incompletos para o banco de dados, gerando leads inválidos.
 
 ### Evidência
-
 https://jam.dev/c/de4f2904-64ea-4774-803e-ddc4975d7ac9
 
 ---
 
-# 🌐 PARTE 02 – Site Institucional
+## 🐞 Item 08 – Placeholder de telefone fixo e ausência de máscara dinâmica
 
-URL: https://qualidade.apprbs.com.br/site
+**Tipo:** Melhoria  
+**Classificação:** Usabilidade / UX  
+**Severidade:** Baixa | **Prioridade:** Baixa  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
+
+### Pré-condições
+- Usuário acessa a página de inscrição em ambiente web compatível.
+- Formulário de inscrição disponível com campo "Telefone" e botão "AVANÇAR".
+
+### Passos para reproduzir
+1. Observar o campo "Telefone" ao acessar a página.
+2. Clicar no campo "Telefone" e tentar digitar um número.
+3. Verificar se o botão "AVANÇAR" permanece habilitado mesmo com o campo incompleto ou mal formatado.
+
+### Resultado atual
+- O campo exibe um placeholder estático, que não desaparece ao digitar.
+- Não há máscara dinâmica para o telefone.
+- O botão "AVANÇAR" permite o clique mesmo com o campo incompleto.
+
+### Resultado esperado
+- Aplicação de máscara dinâmica (XX) XXXXX-XXXX.
+- O botão "AVANÇAR" deve ser desabilitado ou exibir feedback visual caso o campo esteja incorreto ou incompleto.
+
+### Impacto
+Gera confusão visual para o usuário e permite o envio de dados em formatos inconsistentes.
+
+### Evidência
+https://jam.dev/c/de4f2904-64ea-4774-803e-ddc4975d7ac9
 
 ---
 
-## 🐞 BUG-09 – Links inativos nos banners
+# 🌐 PARTE 02: Site Institucional  
+🔗 URL: https://qualidade.apprbs.com.br/site
 
-- Severidade: 🟢 Baixa
-- Prioridade: 🟢 Baixa
+---
 
-### Resultado Atual
+## 🐞 Item 09 – Falha de navegação (links inativos) nos banners principais
 
-Botões sem ação.
+**Tipo:** Correção  
+**Classificação:** Funcionalidade  
+**Severidade:** Baixa | **Prioridade:** Baixa  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Esperado
+### Pré-condições
+- Usuário acessando a página inicial do site institucional.
 
-Redirecionamento adequado.
+### Passos para reproduzir
+1. Acessar: https://qualidade.apprbs.com.br/site
+2. Clicar em "INSCREVA-SE" nos banners principais ou em "SAIBA MAIS" nos slides.
+
+### Resultado atual
+Botões "INSCREVA-SE" e "SAIBA MAIS" não possuem link ou ação.
+
+### Resultado esperado
+Os botões devem redirecionar o usuário para a página de inscrição ou para informações detalhadas.
+
+### Impacto
+Dificulta o acesso do usuário ao fluxo de inscrição e reduz a efetividade dos banners.
 
 ### Evidência
-
 https://jam.dev/c/1d09709f-cdb3-450e-be76-828edfaabb12
 
 ---
 
-## 🐞 BUG-10 – Conteúdo “Lorem Ipsum” em seções informativas
+## 🐞 Item 10 – Conteúdo em latim ("Lorem Ipsum") em seções informativas
 
-- Severidade: 🔴 Alta
-- Prioridade: 🔴 Alta
+**Tipo:** Correção  
+**Classificação:** Conteúdo / UX  
+**Severidade:** Alta | **Prioridade:** Alta  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Atual
+### Pré-condições
+- Usuário navegando pelas seções informativas da página inicial.
 
-Texto fictício exibido.
+### Passos para reproduzir
+1. Rolar a página inicial e ler as descrições das seções "CONHEÇA NOSSOS DIFERENCIAIS", "PRÓXIMOS EVENTOS" e "O QUE NOSSOS ALUNOS DIZEM".
 
-### Resultado Esperado
+### Resultado atual
+Seções informativas exibindo "Lorem Ipsum".
 
-Conteúdo real e informativo.
+### Resultado esperado
+Textos reais em português descrevendo os diferenciais e eventos e ser informativo para o usuário.
+
+### Impacto
+Redução drástica da credibilidade da instituição e falha na comunicação.
 
 ### Evidência
-
 https://jam.dev/c/6fc68aff-0b4e-4597-af33-98623fc4361b
 
 ---
 
-## 🐞 BUG-11 – Redirecionamento incorreto em “Próximos Eventos”
+## 🐞 Item 11 – Redirecionamento indevido na seção "Próximos Eventos"
 
-- Severidade: 🟠 Média
-- Prioridade: 🔴 Alta
+**Tipo:** Correção  
+**Classificação:** Funcionalidade / Navegação  
+**Severidade:** Média | **Prioridade:** Alta  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Atual
+### Pré-condições
+- Usuário localizado na seção de "PRÓXIMOS EVENTOS" do site.
 
-Redirecionamento genérico sem relação com evento.
+### Passos para reproduzir
+1. Localizar a seção "PRÓXIMOS EVENTOS".
+2. Clicar em "INSCREVE-SE AGORA!".
 
-### Resultado Esperado
+### Resultado atual
+O redirecionamento leva sempre para a mesma página genérica sem relação com o conteúdo.
 
-Link direto para inscrição do evento específico.
+### Resultado esperado
+Link direto para a página de inscrição do evento clicado.
+
+### Impacto
+Dificulta a participação do usuário nos eventos e gera confusão na navegação.
 
 ### Evidência
-
 https://jam.dev/c/253171d1-40a3-4894-b7ec-15bc87fefe27
 
 ---
 
-## 🐞 BUG-12 – Erro “Base Legal” no formulário final
+## 🐞 Item 12 – Erro de validação "Base Legal" e dados fictícios no formulário
 
-- Severidade: 🔴 Alta
-- Prioridade: 🔴 Alta
+**Tipo:** Correção  
+**Classificação:** Funcionalidade / LGPD  
+**Severidade:** Alta | **Prioridade:** Alta  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Atual
+### Pré-condições
+- Usuário na seção "NÃO FIQUE DE FORA!" com o formulário de newsletter visível.
 
-Erro sem campo visível de aceite.
+### Passos para reproduzir
+1. Preencher Nome, Email e Telefone no formulário final.
+2. Clicar em "CONCLUIR".
 
-### Resultado Esperado
+### Resultado atual
+Aparece a mensagem "É necessário informar a base legal" sem campo visível e o telefone apresenta números aleatórios.
 
-Campo obrigatório visível para consentimento.
+### Resultado esperado
+O formulário deve permitir o envio com campos limpos e possuir o campo de aceite legal visível.
 
 ### Impacto
-
-🚨 Impede captação de leads.
+Impede a captação de leads via newsletter.
 
 ### Evidência
-
 https://jam.dev/c/a52f8d5e-5fbf-43be-a017-f07b1a3591c1  
 https://jam.dev/c/b8c9a7de-100f-422c-b115-3de43c45ba03
 
 ---
 
-## 🐞 BUG-13 – Informações inválidas no rodapé
+## 🐞 Item 13 – Informações de rodapé inválidas (Endereço e Contatos)
 
-- Severidade: 🟠 Média
-- Prioridade: 🟠 Média
+**Tipo:** Correção  
+**Classificação:** Conteúdo / UI  
+**Severidade:** Média | **Prioridade:** Média  
+**Ambiente:** Chrome 145.0.7632.110 | Windows 11 (x86) | Web  
 
-### Resultado Atual
+### Pré-condições
+- Usuário navegando no final da página (rodapé) do site.
 
-Exibição de dados fictícios.
+### Passos para reproduzir
+1. Rolar até o final da página e verificar a seção de Rodapé.
 
-### Resultado Esperado
+### Resultado atual
+Exibição de informações genéricas e fictícias de contato.
 
-Dados reais da instituição.
+### Resultado esperado
+Dados reais da instituição (CEP, Endereço, E-mail e Telefone).
+
+### Impacto
+Impossibilita o contato externo do usuário com a faculdade.
 
 ### Evidência
-
 https://jam.dev/c/90668d92-cde1-4ce8-82b1-29f333e87d42
 
 ---
@@ -318,4 +423,5 @@ Recomenda-se:
 ---
 
 **Relatório elaborado por Rafael Felipe – QA**
+
 
